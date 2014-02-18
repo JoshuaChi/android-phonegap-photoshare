@@ -26,6 +26,10 @@ class UserPhotoPeer extends BaseUserPhotoPeer {
     $c = new Criteria();
     $c->add(self::PHOTO_ID, $photoId);
     $cp = self::doSelectOne($c);
-    return UserPeer::retrieveByPK($cp->getUserId());
+    if($cp)
+    {
+      return UserPeer::retrieveByPK($cp->getUserId());
+    }
+    return null;
   }
 } // UserPhotoPeer

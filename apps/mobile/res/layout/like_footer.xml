@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#000000" android:id="@+id/bottomButtonBar"
+	android:layout_width="fill_parent" android:layout_height="51dp"
+	android:orientation="vertical" android:layout_centerHorizontal="true"
+	android:layout_gravity="center_vertical" android:layout_weight="1"
+	android:layout_alignParentBottom="true" >
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/likeButton"
+		android:layout_gravity="center"
+		android:text="Click Me If You Like"/>
+</LinearLayout>

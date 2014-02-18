@@ -4,8 +4,7 @@ class PhotoManager{
   
   
   public static function upload($f, $userArray){
-    sfContext::getInstance()->getLogger()->debug("------PhotoManager-------\n");
-  	
+    sfContext::getInstance()->getLogger()->debug("------PhotoManager-------\n");  	
   	
   	
     $photoName = self::generateFilename($f['name'], self::getOriginalExtension($f['name']));
@@ -34,7 +33,7 @@ class PhotoManager{
   
   public static function generateFilename($name='', $extension='')
   {
-    return sha1($name.rand(11111, 99999)).'.'.$extension;
+    return sha1($name.rand(11111, 99999)).$extension;
   }
   
   public static function getOriginalExtension($name='', $default = 'jpg')

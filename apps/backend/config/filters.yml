@@ -5,8 +5,6 @@ rendering: ~
 security:  ~
 
 # insert your own filters here
-backend:
-  class: backendSecurityFilter
 
 cache:     ~
 execution: ~

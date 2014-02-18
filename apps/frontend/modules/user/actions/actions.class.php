@@ -11,15 +11,14 @@ class userActions extends sfActions
 {
   public function executeLogin(sfWebRequest $request){
 		//from mobile
-		if($request->getParameter('m')){
-			
+		if($request->getParameter('m')){			
 			$this->getResponse()->setContentType('application/json');
-	    $result = array('fail'=>1);
+	    $result = array();
 	    if($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT)){
 	      if($request->getParameter('name') && $request->getParameter('password')){
 	        $u = UserPeer::retrieveByName($request->getParameter('name'));
 	        if(!empty($u) && $u->getPassword() == md5($request->getParameter('password'))){
-	          $result = array('success'=>1, 'name'=>$u->getName());
+	          $result = array('id'=>"{$u->getId()}", 'name'=>$u->getName(), 'email'=>$u->getEmail(), 'login_count'=>"{$u->getLoginCount()}", 'created_at'=>$u->getCreatedAt());
 	        }
 	      }      
 	    }

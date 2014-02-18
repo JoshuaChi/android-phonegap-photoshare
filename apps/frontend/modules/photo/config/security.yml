@@ -6,3 +6,7 @@ index:
   is_secure:   false
 browse:
   is_secure:   false
+like:
+  is_secure:   false
+view:
+  is_secure:   false

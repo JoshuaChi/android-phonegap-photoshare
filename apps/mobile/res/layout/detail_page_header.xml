@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/topBar" android:background="#079FC6"
+	android:layout_width="fill_parent" android:layout_height="51dp"
+	android:stretchColumns="1" android:layout_weight="1" android:gravity="center">
+	<TableRow>
+		<ImageButton android:id="@+id/backButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/ic_menu_back"></ImageButton>
+
+		<TextView android:id="@+id/photoDetailViewHeader"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#333333" android:textSize="17sp"
+			android:layout_gravity="center_horizontal" android:textAppearance="@android:style/TextAppearance.Large"
+			android:text="@string/photo_detail" />
+
+	</TableRow>
+</TableLayout>
+

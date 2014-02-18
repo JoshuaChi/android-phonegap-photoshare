@@ -24,6 +24,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <link rel="apple-touch-startup-image" href="images/splash.png">  
 
+  <title>Picstorms.com | Share photos based on a theme</title>
+  <meta content="photo share, theme, picture share, picture" name="keywords">
+
   <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -66,6 +69,20 @@
   <!-- Media Queries for IE --> 
   <script src="/js/libs/jquery.mediaqueries1.2.js"></script>    
 
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9434024-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  
 </head>
 <?php
 
@@ -106,8 +123,8 @@ $nextWeather = $sf_user->getAttribute('next_weather');
         <div style="display:none;" id="aboutwrapper" class="dropdown">
           <div id="aboutMenu">
           <p><strong>Picstorms is a theme based photo community.</strong></p>
-          <p>In order to submit pictures you need our Android application. Scan the QR code below to download the app or <a href="http://www.picstorms.com/picstorms.apk">click here to download the beta app.</a></p>
-          <a href="http://www.picstorms.com/picstorms.apk"><img src="/images/qr_appv1.png"></a>
+          <p>In order to submit pictures you need our Android application. Scan the QR code below to download the app or <a href="http://www.picstorms.com/picstorms.apk" onClick="_gaq.push(['_trackEvent', 'clicks', 'download', 'picstorms.apk']);">click here to download the beta app.</a></p>
+          <a href="http://www.picstorms.com/picstorms.apk" onClick="_gaq.push(['_trackEvent', 'clicks', 'download', 'picstorms.apk']);"><img src="/images/qr_appv1.png"></a>
           </div>
         </div>
     </li>

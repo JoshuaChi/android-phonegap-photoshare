@@ -4,6 +4,32 @@
 SET FOREIGN_KEY_CHECKS = 0;
 
 #-----------------------------------------------------------------------------
+#-- likes
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `likes`;
+
+
+CREATE TABLE `likes`
+(
+	`id` INTEGER  NOT NULL AUTO_INCREMENT,
+	`user_id` INTEGER  NOT NULL,
+	`photo_id` INTEGER  NOT NULL,
+	`created_at` DATETIME,
+	PRIMARY KEY (`id`,`user_id`,`photo_id`),
+	INDEX `likes_FI_1` (`user_id`),
+	CONSTRAINT `likes_FK_1`
+		FOREIGN KEY (`user_id`)
+		REFERENCES `users` (`id`)
+		ON DELETE CASCADE,
+	INDEX `likes_FI_2` (`photo_id`),
+	CONSTRAINT `likes_FK_2`
+		FOREIGN KEY (`photo_id`)
+		REFERENCES `photos` (`id`)
+		ON DELETE CASCADE
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
 #-- photos
 #-----------------------------------------------------------------------------
 

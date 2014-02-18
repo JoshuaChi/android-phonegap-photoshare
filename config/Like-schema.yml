@@ -1,0 +1,7 @@
+propel: 
+  likes: 
+    _attributes:  {phpName: Like}
+    id: 
+    user_id: { type: integer, foreignTable: users, foreignReference: id, onDelete: cascade, required: true, primaryKey: true }
+    photo_id: { type: integer, foreignTable: photos, foreignReference: id, onDelete: cascade, required: true, primaryKey: true  }
+    created_at: ~

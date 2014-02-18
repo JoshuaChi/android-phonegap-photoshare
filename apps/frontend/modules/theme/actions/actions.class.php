@@ -14,7 +14,7 @@ class themeActions extends sfActions
     $this->getResponse()->setContentType('application/json');
     if($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT)){
 			$t = ThemePeer::getCurrentTheme();
-      $result = array('id'=>$t->getId(), 't'=>$t->getTitle(), 'd'=>$t->getDescription());
+      $result = array('id'=>"{$t->getId()}", 't'=>$t->getTitle(), 'd'=>$t->getDescription(), 'c'=>$t->getCreatedAt(), 'n'=>"{$t->getCurrentPhotoNumbers()}");
       $data_json=json_encode($result);
     }else{
       $data_json=json_encode(array());

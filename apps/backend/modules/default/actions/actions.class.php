@@ -35,6 +35,7 @@ class defaultActions extends sfActions
 
         if(!empty($u) && $u->getPassword() == md5($request->getParameter('password')) && $u->getIsAdmin()){
 					$this->getUser()->authenticate($u);
+          $this->getUser()->addCredential('admin');
           $this->redirect('@homepage');
         }
       }      

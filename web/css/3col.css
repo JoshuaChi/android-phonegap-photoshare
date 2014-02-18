@@ -40,3 +40,7 @@ h2{
 #photoSingle .photoInfo li{
   float: none;
 }
+
+#forecast{
+  display: none !important;
+}

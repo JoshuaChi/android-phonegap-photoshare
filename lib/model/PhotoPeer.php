@@ -53,4 +53,13 @@ class PhotoPeer extends BasePhotoPeer {
     $c->addDescendingOrderByColumn(self::ID);
     return self::doSelect($c);
   }
+  
+  public static function getMobileOverview($themeId=null){
+    $c = new Criteria();
+    $c->setLimit(50);
+    $c->add(self::THEME_ID, $themeId);
+    $c->addDescendingOrderByColumn(self::ID);
+    $c->setLimit(32);
+    return self::doSelect($c);
+  }
 } // PhotoPeer

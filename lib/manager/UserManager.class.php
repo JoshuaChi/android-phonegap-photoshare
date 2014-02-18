@@ -1,6 +1,9 @@
 <?php
 class UserManager{
-  public static function addUserPhoto($userArray=array(), $photoId=''){
+  const HASH_PREFIX = "p1cst0rms.c0mI0vu98becs$%";
+  
+  public static function addUserPhoto($userArray=array(), $photoId='')
+  {
     if(!empty($userArray) && !empty($photoId)){
       if(!empty($userArray['userName'])){
         if(!empty($userArray['userNew'])){
@@ -26,5 +29,15 @@ class UserManager{
     return false;
   }
   
+  public static function isAuthenticated($userArray=array())
+  {
+    if(!empty($userArray) && !empty($userArray['userName']) && !empty($userArray['md5'])){      
+      if ( md5(self::HASH_PREFIX.$userArray['userName']) == $userArray['md5'])
+      {
+        return true;
+      }
+    }
+    return false;
+  }
 
 }

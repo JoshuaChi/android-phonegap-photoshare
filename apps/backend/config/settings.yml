@@ -33,3 +33,8 @@ all:
 
     # Enable the database manager
     use_database:           true
+  .actions:
+    default_module:         default   # Default module and action to be called when
+    default_action:         index     # A routing rule doesn't set it
+    login_module:           default
+    login_action:           login
