@@ -72,3 +72,9 @@
 
 /apps/mobile/bin
 /apps/mobile/local.properties
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
