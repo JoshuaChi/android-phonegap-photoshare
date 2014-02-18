@@ -1,0 +1,491 @@
+/* PicStorms Mobile V1
+==========================================*/
+
+h3 a{ text-decoration: none; }
+
+#overview .photo img{
+ float: left;
+ width: 50px;
+ height: 50px;
+ overflow: hidden;
+}
+<<<<<<< HEAD
+=======
+  
+@media screen and (orientation:portrait){
+	.uiEntryContent{
+	  width: 230px;
+	}
+}
+
+@media screen and (orientation:landscape){
+    .uiEntryContent{
+      width: 440px;
+    }
+}  
+  
+.uiEntryContent h3,
+.uiEntryContent h4{
+  overflow: hidden;
+  margin: 0;
+}
+  
+.uiEntry .uiActions{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.uiActions a{ padding: 15px; }
+
+.uiEntry .date{
+  color: #666;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+
+/* _login Page
+==========================================*/
+.loginHeader{ 
+  margin-bottom: 20px;
+}
+
+#loginBranding{
+  text-align: center;
+}
+
+.loginHeader h2{
+  color: #fff;
+  padding-top: 10px;
+  text-shadow: 1px 1px 0px #000;
+  text-align: center;
+}
+
+#loginForm{ 
+ margin: 0 25px 0 15px;
+}
+
+#login label{ 
+  display: block;
+  color: #555;
+}
+
+#login input{ 
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 4px;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-raidus: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+#login .kmButton{
+  width: 100px;
+}
+
+
+/* _overview Page
+==========================================*/
+ul#overviewNav {
+  display: block;
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  position: relative;
+  padding: 0;
+}
+
+ul#overviewNav li{
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  background: #efefef;
+}
+
+ul#overviewNav li a{
+  display: block;
+  float: left;
+  width: 100%;
+  height: 50px;
+  line-height: 51px;
+  padding-left: 15px;
+  color: #e1025d;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #fff;
+  text-decoration: none;
+}
+
+ul#overviewNav li a:hover,
+ul#overviewNav li a:active{
+  background-color: #ddd;
+}
+
+ul#overviewNav li a span{ 
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  background: url(images/icon_rightArrow.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  display: block;
+  text-indent: -9999px;
+}
+
+#overviewNav img{
+  margin: 0 5px -10px 0;
+}
+
+
+/* _inbox
+==========================================*/
+#inbox .uiEntryContent{ font-size: 12px;}
+
+#inbox .uiEntry h3{
+  margin-bottom: 0;
+}
+
+.uiEntry.read h3{ 
+  font-weight: normal;
+}
+
+
+/* _messageContent
+==========================================*/
+#messageContent{
+  margin-bottom: 15px;
+}
+
+#messageContent .uiEntry h3{
+  margin-bottom: 0;
+}
+
+
+/* _profile
+==========================================*/
+#profileUserInfo{
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+@media screen and (orientation:portrait){
+	#profileUserInfo{ 
+	  width: 100%; 
+    }
+}
+@media screen and (orientation:landscape){
+	#profileUserInfo{ 
+  	  width: 280px;
+     }
+}
+
+#profileUserInfo img{
+  margin-left: 15px;
+  float: left;
+}
+
+#profileUserInfo ul{
+  margin-left: 15px;
+  float: left;
+}
+
+#profileUserInfo .username{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#profileActions{
+  margin: 0 0 10px 15px; 
+  float: left;
+}
+
+#profileActions a{
+  display: block;
+  padding: 6px 8px 7px;
+  margin-bottom: 10px;
+  background: #efefef;
+  font-size: 11px;
+  border: 1px solid;
+  border-color: #ddd #ddd #ccc #ccc;
+  text-shadow: 1px 1p 0 #fff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  box-shadow: 1px 1px 1px #ddd;
+  -moz-box-shadow: 1px 1px 1px #ddd;
+  -webkit-box-shadow: 1px 1px 1px #ddd;
+}
+
+#profileActions a:active,
+#profileActions a:hover{
+  padding: 7px 8px 6px;
+  box-shadow: 0;
+  -moz-box-shadow: 0;
+  -webkit-box-shadow: 0;
+}
+
+@media screen and (orientation:portrait){
+	#profileActions a{
+	  width: 275px; 
+    }
+}
+@media screen and (orientation:landscape){
+    #profileActions{
+      margin: 0px 0 10px 10px; 
+    }
+}
+
+#profileActions img{
+  margin: 0 5px -2px 0;
+}
+
+.profileData{
+  margin: 0 15px 15px 15px;
+}
+
+#profileAlbum{
+  margin: 0 0 10px 15px;
+}
+
+#profileAlbum li{
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#profileAlbum img{
+  width: 50px;
+  height: 50px;
+}
+
+#profileReviews li{
+  margin-bottom: 20px;
+}
+
+.profileAd{
+  float: left;
+  width: 100%;
+  margin: 10px 0 0;
+  text-align: center; 
+}
+
+/* _footer
+==========================================*/
+#footer{
+  clear: both;
+  float: left;
+  height: 43px;
+  width: 100%;
+  background: #000;
+  border-top: 1px solid #e52875;  
+  border-bottom: 1px solid #e52875;
+  color: #fff;
+  position: relative;
+  font-size: 12px;
+}
+
+.clearfooter {
+  height: 43px;
+  clear: both;
+}
+
+#footer a{ 
+  color: #e52875;
+}
+
+#footer ul{
+  float: left;
+}
+
+#footer li{
+  float: left;
+  padding: 2px 5px;
+}
+
+#footer li a{ 
+  float: left;
+  padding: 10px;
+}
+
+/* _kmButtons - kmButtons based on "Super Awesome kmButtons With CSS3 and RGBA": http://www.zurb.com/article/266/super-kmButton-kmButtons-with-css3-and-rgba 
+==========================================*/
+/* Set the primary color for the kmButtons; */
+.kmButton{
+  background-color: #e1025d !important;
+  color: #fff !important;
+}
+
+.kmButton.grey{
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+.kmButton.delete{
+  background-color: #800 !important;
+  color: #fff !important;
+}
+
+.kmButton.complete{
+  background-color: #017F34 !important;
+  color: #fff !important;
+}
+
+.kmButton.disabled{ 
+  cursor: default !important;
+}
+
+.kmButton.full{
+  width: 73%;
+}
+
+/* the kmButton size gets set here. Feel free to add new sizes, like .kmButton.small or .small.large   */
+.kmButton{
+  padding: 9px 40px 10px !important; 
+  font-size: 13px !important;
+}
+
+.kmButton.disabled,
+.kmButton:active{ padding: 10px 40px 9px !important; }
+
+.kmButton.registration{ 
+  padding: 7px 4px 7px !important; 
+  font-size: 13px !important;
+}
+
+.kmButton.registration:active{ padding: 8px 4px 6px !important; }
+
+.kmButton.xsmall{ 
+  padding: 3px !important; 
+  font-size: 11px !important;
+}
+
+.kmButton.xsmall:active{ padding: 4px 3px 2px !important; }
+
+.kmButton.small{ 
+  padding: 4px 4px 4px !important; 
+  font-size: 13px !important;
+}
+
+.kmButton.small:active{ padding: 5px 4px 3px !important; }
+
+.kmButton.large{ 
+  padding: 9px 40px 10px !important; 
+  font-size: 13px !important;
+}
+
+.kmButton.large:active{ padding: 10px 40px 9px !important; }
+
+/* Touch the rest at your own risk. */
+.kmButton{ 
+  border: 0 !important; 
+  cursor: pointer !important; 
+  font-family: inherit !important;
+  font-style: normal !important; 
+  font-weight: bold !important; 
+  line-height: 1 !important; 
+  position: relative !important; 
+  text-align: center !important;
+  text-decoration: none !important; 
+  outline: none !important;
+  
+  /* Important to maintain vertical margin */
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  
+  /* not all browsers support these, but who cares? */
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25) !important; 
+  
+  border-radius: 5px !important; 
+  -moz-border-radius: 5px !important; 
+  -webkit-border-radius: 5px !important; 
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5) !important; 
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5) !important; 
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
+  
+  /* who needs images these days? */
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.2), rgba(150,150,150,.2), rgba(0,0,0,.0)) !important;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.2)), color-stop(0.5, rgba(150,150,150,.2)), to(rgba(0,0,0,.0))) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30ffffff,endColorstr=#10000000);
+  
+  /* cross-browser inline block hack 
+     see http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/ */
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle !important;
+  *display: inline !important;
+  position: relative;
+  
+  /* IE luv */
+  zoom: 1;
+  
+  /*disable text selection (Firefox only)*/
+  -moz-user-select: none;
+  
+  /* no text selection for iOS */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* OPERA only
+   if there is no border set, Opera shows a transparent background-color if border-radius is set. */
+@media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0) {
+  input.kmButton {
+    border: 1px solid RGBa(0,0,0,0) !important;
+  }
+}
+
+/* hide selection background color */
+.kmButton::selection{
+  background: transparent;
+}
+
+.kmButton{
+  outline: 0; /*remove dotted line, works for links only*/
+}
+
+.kmButton::-moz-focus-inner{
+  border: none; /* remove dotted lines for kmButtons */
+}
+
+.kmButton:focus,
+.kmButton:hover{
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.4), rgba(150,150,150,.3), rgba(0,0,0,.0)) !important;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)), color-stop(0.5, rgba(150,150,150,.3)), to(rgba(0,0,0,.0))) !important;
+  #filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50ffffff,endColorstr=#20000000);
+}
+
+.kmButton.disabled,
+.kmButton:active.disabled,
+.kmButton:active{ 
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,.2), rgba(150,150,150,.2), rgba(255,255,255,.2)) !important;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.2)), color-stop(0.5, rgba(150,150,150,.2)), to(rgba(255,255,255,.2))) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#20000000,endColorstr=#50ffffff);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.7) !important;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.7) !important; 
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.7) !important;
+}
+
+/* Safari doesn't support inset box shadow, so we'd better remove it */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+  .kmButton.disabled,
+  .kmButton:active	{ 
+    -webkit-box-shadow: none;
+  }
+}
+
+.loading{
+  background: url(images/spinner_black_48.png) no-repeat 0 0;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+>>>>>>> work on upload button

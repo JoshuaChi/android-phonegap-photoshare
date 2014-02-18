@@ -1,0 +1,15 @@
+# Project files
+/*_dev.php
+/uploads/*
+/picstorms.apk
+
+
+# SCM files
+.arch-params
+.bzr
+_darcs
+.git
+.hg
+.monotone
+.svn
+CVS

@@ -1,0 +1,20 @@
+# Project files
+/cache/*
+/log/*
+/logs
+/web/*_dev.php
+/web/uploads/*
+/app/mobile/bin/*
+/app/mobile/gen/*
+/picstorms.com
+/web
+
+# SCM files
+.arch-params
+.bzr
+_darcs
+.git
+.hg
+.monotone
+.svn
+CVS

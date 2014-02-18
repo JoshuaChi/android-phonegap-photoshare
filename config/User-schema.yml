@@ -1,0 +1,11 @@
+propel: 
+  users: 
+    _attributes:  {phpName: User}
+    id: 
+    name: { type: varchar(20), index: unique }
+    email: { type: varchar(75), required: true, index: true }
+    password: {type: char, size: 40, required: TRUE }
+    is_admin: { type: boolean, required: true, default: false }
+    login_count: { type: integer, default: 0 }
+    created_at: ~
+    updated_at: ~

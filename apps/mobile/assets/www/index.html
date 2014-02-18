@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,user-scalable=false,minimum-scale=1.0,maximum-scale=1.0" />
+		<meta name="MobileOptimized" content="width" />
+    <title>Kaufmich</title>
+    
+	  <script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
+	  <script type="text/javascript" src="jquery.min.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="main.js"></script>    
+	  <script type="text/javascript" src="jquery.mobile-1.0b3.js"></script>
+  
+    <link rel="stylesheet"  href="jquery.mobile-1.0b3.css" /> 
+    <link rel="stylesheet"  href="mobile.css" />  
+    
+    <script type="text/javascript">
+      document.addEventListener("deviceready", init, false);
+    </script>
+  </head>
+  
+<body>
+
+<div data-role="page" id="home">
+
+	<div data-role="header" data-inline="true">
+		<h1>PicStorms</h1>
+    <span data-role="button" class="ui-btn-right" data-role="button" data-theme="e" data-icon="plus" onclick="camara.capturePhoto(); return false;">Capture Photo</span>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	<h3><a href="#themeDescription" data-rel="dialog"><span class='theme-title'></span></a></h3>
+		<div id='overview'></div>
+	</div><!-- /content -->
+
+  
+</div><!-- /page -->
+
+<div data-role="page" id="photoDetail">
+	<div data-role="header">
+    <a href="#home" data-rel="back" data-icon="arrow-l" data-transition="slideup" data-direction="reverse">Back</a>
+		<h1>PicStorms</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>
+			<img id='big-photo' src='' width='97%' height='97%'>
+   	</p>
+  </div>    
+
+</div><!-- /page -->
+
+
+<div data-role="page" id="themeDescription">
+	<div data-role="header">
+		<h1>Current Theme</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<input id='theme-id' type='hidden' />
+		<h3><span class='theme-title'></span></h3>
+		<p>
+			<span id='theme-description'></span>
+   	</p>
+  </div>    
+
+</div><!-- /page -->
+
+<div data-role="page" id="login">
+	<div data-role="header">
+		<h1>Login</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<span>Don't have a account? <a href='#register'>Register Here</a></span>
+    
+  	<p>Input your account details.</p>
+		<form id='loginForm'>
+			<input type='hidden' name='m' value=1 />
+      <div data-role="fieldcontain">
+          <label for="name">Username:</label>
+          <input type="text" name="name" id="name" value=""  />
+      </div>	
+      
+      <div data-role="fieldcontain">
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" value="" />
+      </div>	
+    	<div data-inline="true" class="ui-grid-a">
+        <div class="ui-block-a"><a href="#home"  data-role="button" data-theme="d" >Cancel</a></div>
+        <div class="ui-block-b"><button type="submit" data-theme="a" id="loginSubmit">Submit</button></div>
+      </div>      
+		</form>
+	</div><!-- /content -->
+	
+</div><!-- /page -->
+
+<div data-role="page" id="register">
+	<div data-role="header">
+		<h1>Register</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<span>Already have a account? <a href='#login'>Login</a></span>
+    
+  	<p>Input your account details.</p>
+		<form id='registerForm'>
+			<input type='hidden' name='m' value=1 />
+      <div data-role="fieldcontain">
+          <label for="registerName">Username:</label>
+          <input type="text" name="registerName" id="registerName" value=""  />
+      </div>	
+      
+      <div data-role="fieldcontain">
+          <label for="registerPassword">Password:</label>
+          <input type="text" name="registerPassword" id="registerPassword" value="" />
+      </div>
+      	
+      <div data-role="fieldcontain">
+          <label for="registerEmail">Email:</label>
+          <input type="text" name="registerEmail" id="registerEmail" value="" />
+      </div>
+    	<div data-inline="true" class="ui-grid-a">
+       <div class="ui-block-a"><a href="#home" data-role="button" data-theme="d" >Cancel</a></div>
+       <div class="ui-block-b"><button type="submit" data-theme="a" id="registerSubmit">Submit</button></div>
+      </div>      
+		</form>
+	</div><!-- /content -->
+	
+</div><!-- /page -->
+
+<div data-role="page" id="upload">
+	<div data-role="header">
+    <a href="#home" data-icon="delete" data-transition="slide" data-direction="reverse">Cancel</a>
+		<h1>Upload Photo</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+    <div id="thumbnail">
+      <img style="display:none;" id="previewImage" src="" />
+    </div>
+    
+<!--    <div data-role="collapsible">
+      <h3>More Info</h3>
+      <p><strong>Username:</strong> <span id='myName'></span></p>
+      <p><strong>Location:</strong> <span id='location'></span></p>
+    </div>  
+-->
+    <div data-role="fieldcontain">
+      <label for="textarea">Pic Description (optional):</label>
+      <textarea cols="40" rows="8" name="photoDesc" id="photoDesc"></textarea>
+    </div>
+    
+    <button onclick="camara.upload(); return false;" id='uploadButton' data-theme="e" >Upload</button>
+  
+  </div><!-- /content -->
+  
+</div><!-- /page -->
+
+
+</body>
+</html>

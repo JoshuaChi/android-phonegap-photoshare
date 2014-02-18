@@ -1,0 +1,8 @@
+propel: 
+  user_photos: 
+    _attributes: {phpName: UserPhoto}
+    user_id: { type: integer, foreignTable: users, foreignReference: id, onDelete: cascade, required: true, primaryKey: true }
+    photo_id: { type: integer, foreignTable: photos, foreignReference: id, onDelete: cascade, required: true, primaryKey: true  }
+    created_at:
+    _uniques:
+      unique_user_photo: [user_id, photo_id]

@@ -1,0 +1,288 @@
+/* sunny
+------------------------------- */
+body.sunny{
+  background: #00bddf;
+}
+
+.sunny a, .sunny a:active, .sunny  a:visited { color: #333; }
+.sunny a:hover { color: #333; }
+
+.lightrain .storm{
+ background:  url(/images/storms/sunny/clouds1.png) repeat-x scroll 200% 0;;
+}
+
+.sunny .storm2{
+  background:  url(/images/storms/sunny/clouds2.png) repeat-x scroll 70% 0;
+  
+  -moz-animation-duration: 20s;  
+  -moz-animation-name: clouds;  
+  -moz-animation-iteration-count: infinite;
+  
+  -webkit-animation-duration: 20s;  
+  -webkit-animation-name: clouds;  
+  -webkit-animation-iteration-count: infinite;
+}
+
+.sunny footer{
+  background: url(/images/storms/sunny/bg_footer.png) repeat-x scroll 100% 0;
+}
+
+.sunny .land{
+  background: url(/images/storms/sunny/bg_land.png) no-repeat 50% 0;
+}
+
+.icon.sunny{
+  background: url(/images/storms/sunny/icon.png) no-repeat;
+}
+
+
+/* lightrain
+------------------------------- */
+body.lightrain{
+  background: #00bddf url(/images/storms/lightrain/bg_main.png) repeat;
+  
+  -moz-animation-duration: 4s;  
+  -moz-animation-name: rain;  
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  
+  -webkit-animation-duration: 4s;  
+  -webkit-animation-name: rain;  
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+.lightrain a, .lightrain a:active, .lightrain  a:visited { color: #333; }
+.lightrain a:hover { color: #333; }
+
+.lightrain .storm{
+  background:  url(/images/storms/lightrain/clouds1.png) repeat-x scroll 200% 0;
+}
+
+.lightrain .storm2{
+  background:  url(/images/storms/lightrain/clouds2.png) repeat-x scroll 70% 0;
+  
+  -moz-animation-duration: 20s;  
+  -moz-animation-name: clouds;  
+  -moz-animation-iteration-count: infinite;
+  
+  -webkit-animation-duration: 20s;  
+  -webkit-animation-name: clouds;  
+  -webkit-animation-iteration-count: infinite;
+}
+
+.lightrain footer{
+  background: url(/images/storms/lightrain/bg_footer.png) repeat-x scroll 100% 0;
+}
+
+.lightrain .land{
+  background: url(/images/storms/lightrain/bg_land.png) no-repeat 50% 0;
+}
+
+.icon.lightrain{
+  background: url(/images/storms/lightrain/icon.png) no-repeat;
+}
+
+
+/* thunderstorm
+-------------------------------*/
+body.thunderstorm{
+  background: #262937  url(/images/storms/thunderstorm/bg_main.png);
+  color: #eee;
+  
+  -moz-animation-duration: 2s;  
+  -moz-animation-name: rain;  
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  
+  -webkit-animation-duration: 2s;  
+  -webkit-animation-name: rain;  
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+.thunderstorm a, .thunderstorm a:active, .thunderstorm  a:visited { color: #57c5ec; }
+.thunderstorm a:hover { color: #35333c; }
+
+.thunderstorm .storm{
+  background:  url(/images/storms/thunderstorm/clouds2.png) repeat-x scroll 200% 0;;
+}
+
+.thunderstorm .storm2{
+  background:  url(/images/storms/thunderstorm/clouds1.png) repeat-x scroll 70% 0;
+  
+  -moz-animation-duration: 20s;  
+  -moz-animation-name: clouds;  
+  -moz-animation-iteration-count: infinite;
+  
+  -webkit-animation-duration: 20s;  
+  -webkit-animation-name: clouds;  
+  -webkit-animation-iteration-count: infinite;
+}
+
+.thunderstorm footer{
+  background: url(/images/storms/thunderstorm/bg_footer.png) repeat-x scroll 100% 0;
+}
+
+.thunderstorm .land{
+  background: url(/images/storms/thunderstorm/bg_land.png) no-repeat scroll 50% 0;
+}
+
+.thunderstorm .character{
+  background: url(/images/storms/thunderstorm/character.png) no-repeat scroll 50% 0;
+  display: block;
+  width: 100%;
+  height: 130px;
+}
+
+.icon.thunderstorm{
+  background: url(/images/storms/thunderstorm/icon.png) no-repeat;
+}
+
+
+/* clearnight
+-------------------------------*/
+body.clearnight{
+  background: #000  url(/images/storms/clearnight/bg_main.png);
+  color: #eee;
+}
+
+.clearnight a, .clearnight a:active, .clearnight  a:visited { color: #57c5ec; }
+.clearnight a:hover { color: #35333c; }
+
+.clearnight footer{
+  background: url(/images/storms/clearnight/bg_footer.png) repeat-x scroll 100% 0;
+}
+
+.clearnight .land{
+  background: url(/images/storms/clearnight/bg_land.png) no-repeat 50% 0;
+}
+
+.clearnight .character{
+  background: url(/images/storms/clearnight/character.png) no-repeat scroll 50% 0;
+  display: block;
+  width: 100%;
+  height: 130px;
+}
+
+.icon.clearnight{
+  background: url(/images/storms/clearnight/icon.png) no-repeat;
+}
+
+
+/* auroraborealis
+-------------------------------*/
+body.auroraborealis{
+  background: #000  url(/images/storms/clearnight/bg_main.png);
+  color: #eee;
+}
+
+.auroraborealis a, .auroraborealis a:active, .auroraborealis  a:visited { color: #57c5ec; }
+.auroraborealis a:hover { color: #35333c; }
+
+.auroraborealis .storm{
+  background:  url(/images/storms/auroraborealis/aurora1.png) repeat-x scroll 200% 0;;
+  -moz-animation-duration: 20s;  
+  -moz-animation-name: clouds2;  
+  -moz-animation-iteration-count: infinite;
+  
+  -webkit-animation-duration: 20s;  
+  -webkit-animation-name: clouds2;  
+  -webkit-animation-iteration-count: infinite;
+}
+
+.auroraborealis .storm2{
+  background:  url(/images/storms/auroraborealis/aurora2.png) repeat-x scroll 200% 0;;
+  -moz-animation-duration: 20s;  
+  -moz-animation-name: clouds;  
+  -moz-animation-iteration-count: infinite;
+  
+  -webkit-animation-duration: 20s;  
+  -webkit-animation-name: clouds;  
+  -webkit-animation-iteration-count: infinite;
+}
+
+.auroraborealis footer{
+  background: url(/images/storms/auroraborealis/bg_footer.png) repeat-x scroll 100% 0;
+}
+
+.auroraborealis .land{
+  background: url(/images/storms/auroraborealis/bg_land.png) no-repeat 50% 0;
+}
+
+.auroraborealis .character{
+  background: url(/images/storms/auroraborealis/character.png) no-repeat scroll 50% 0;
+  display: block;
+  width: 100%;
+  height: 130px;
+}
+
+.icon.auroraborealis{
+  background: url(/images/storms/auroraborealis/icon.png) no-repeat;
+}
+
+
+/* tornado
+------------------------------- */
+.tornado{  
+  background: #0e0e10;
+}
+
+
+/* Animations
+------------------------------- */
+ @-webkit-keyframes rain {
+    from {  
+      background-position: 0 0;  
+    }  
+    to {  
+      background-position: 0 100px;  
+    }  
+ }
+ @-moz-keyframes rain {  
+    from {  
+      background-position: 0 0;  
+    }  
+    to {  
+      background-position: 0 100px;  
+    }  
+  }  
+
+
+ @-webkit-keyframes clouds {  
+    from {  
+      background-position: 0 0;  
+    }  
+      
+    to {  
+      background-position: 100% 0;  
+    }  
+  }  
+ @-moz-keyframes clouds {  
+    from {  
+      background-position: 0 0;  
+    }  
+      
+    to {  
+      background-position: 100% 0;  
+    }  
+  } 
+  
+   @-webkit-keyframes clouds2 {  
+    from {  
+      background-position: 100% 0;   
+    }  
+      
+    to {  
+      background-position: 0 0;  
+    }  
+  }  
+ @-moz-keyframes clouds2 {  
+    from {  
+      background-position: 100% 0;  
+    }  
+      
+    to {  
+      background-position: 0 0;  
+    }  
+  } 

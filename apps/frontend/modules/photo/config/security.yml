@@ -1,0 +1,8 @@
+all:
+  is_secure:   true
+upload:
+  is_secure:   false
+index:
+  is_secure:   false
+browse:
+  is_secure:   false

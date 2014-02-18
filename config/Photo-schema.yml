@@ -1,0 +1,14 @@
+propel: 
+  photos: 
+    _attributes:  {phpName: Photo}
+    id: 
+    theme_id: { type: integer, foreignTable: themes, foreignReference: id, onDelete: setnull, required: true}
+    title: { type: varchar(255) }
+    path: { type: varchar(255) }
+    description: { type: longvarchar }
+    is_active: { type: boolean, required: true, default: false }
+    views: { type: integer, default: 0 }
+    comments: { type: integer, default: 0 }
+    location: { type: varchar(255) }
+    created_at: ~
+    updated_at: ~

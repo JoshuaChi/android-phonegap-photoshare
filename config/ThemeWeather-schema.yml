@@ -1,0 +1,7 @@
+propel: 
+  theme_weathers: 
+    _attributes:  {phpName: ThemeWeather}
+    theme_id: { type: integer, foreignTable: themes, foreignReference: id, onDelete: cascade, required: true, primaryKey: true }
+    weather_id: { type: integer, foreignTable: weathers, foreignReference: id, onDelete: cascade, required: true, primaryKey: true  }
+    created_at: ~
+    updated_at: ~

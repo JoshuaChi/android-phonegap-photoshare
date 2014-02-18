@@ -1,0 +1,10 @@
+propel: 
+  weathers: 
+    _attributes:  {phpName: Weather}
+    id:
+    title: { type: varchar(255) }
+    body_class: { type: varchar(255) }
+    description: { type: longvarchar }
+    max_photo_number: { type: integer, default: 0 }
+    created_at: ~
+    updated_at: ~

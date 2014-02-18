@@ -1,0 +1,11 @@
+propel: 
+  themes: 
+    _attributes:  {phpName: Theme}
+    id:
+    title: { type: varchar(255) }
+    class_name: { type: varchar(255) }
+    description: { type: longvarchar }
+    is_active: { type: boolean, required: true, default: false }
+    current_photo_numbers: { type: integer, default: 0 }
+    created_at: ~
+    updated_at: ~
